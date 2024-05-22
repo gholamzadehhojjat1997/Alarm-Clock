@@ -66,6 +66,7 @@ body {
     font-size: 15px;
     width: 100%;
     cursor: pointer;
+    background-color: #fff;
 }
 .container .content .controls select option {
     text-align: center;
