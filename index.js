@@ -26,6 +26,7 @@ setInterval(() => {
     timeBox.innerHTML = `${hour}:${minute}:${second}`;
     if (alartTime == `${hour}:${minute}`) {
         ringTone.play();
+        ringTone.loop = true;
         clockRings.classList.add("clockRings");
     }
 }, 1000);
@@ -41,14 +42,14 @@ setAlarmButton.addEventListener("click" , () => {
 function checkState () {
     if (state == "noset") {
         alartTime = `${selectMenu[0].value}:${selectMenu[1].value}`;
-        setAlarmButton.style.backgroundColor = "#00ff88";
+        setAlarmButton.style.backgroundColor = "rgba(74,152,247,0.5)";
         setAlarmButton.style.color = "#000";
         setAlarmButton.innerHTML = "Clear Alarm";
         setContent.classList.add("disable");
         state = "set";
     } else {
         alartTime = ``;
-        setAlarmButton.style.backgroundColor = "#4a98f7";
+        setAlarmButton.style.backgroundColor = "rgba(74,152,247,1)";
         setAlarmButton.style.color = "#fff";
         setAlarmButton.innerHTML = "Set Alarm";
         setContent.classList.remove("disable");

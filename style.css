@@ -88,11 +88,11 @@ button:hover {
 }
 @media screen and (max-width: 350px) {
     .container {
-        width: 250px;
+        width: 225px;
         padding: 30px 20px;
     }
     img {
-        width: 100px;
+        width: 90px;
     }
     .container .timeBox {
         font-size: 27.5px;
